@@ -1,1 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Электронный дневник</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Электронный дневник</h1>
+        <div class="user-info">
+            <p>Имя: <span id="user-name">Иван Иванов</span></p>
+            <p>Класс: <span id="user-class">10А</span></p>
+            <button id="logout-btn">Выйти</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="tabs">
+            <ul class="tab-list">
+                <li class="tab active" id="schedule-tab">Расписание</li>
+                <li class="tab" id="grades-tab">Оценки</li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="schedule">
+                    <!-- Контент для вкладки "Расписание" -->
+                    <div class="schedule-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>День</th>
+                                    <th>1 урок</th>
+                                    <th>2 урок</th>
+                                    <th>3 урок</th>
+                                    <th>4 урок</th>
+                                    <th>5 урок</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Строки с уроками -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane" id="grades">
+                    <!-- Контент для вкладки "Оценки" -->
+                    <div class="grades-list">
+                        <!-- Список оценок -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Электронный дневник</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
